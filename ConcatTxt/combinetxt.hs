@@ -9,6 +9,9 @@ main = do
     newtxt <- getLine
     texts <- getTexts path
     writeFile (path ++ "\\" ++  newtxt ++ ".txt") (combineTexts texts)
+    putStrLn "type anything and press enter to exit"
+    getLine
+    return ()  
 
 
 combineTexts :: [String] -> String
