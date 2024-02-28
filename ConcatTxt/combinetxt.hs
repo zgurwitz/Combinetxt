@@ -10,6 +10,7 @@ main = do
     newtxt <- getLine
     texts <- getTexts clean
     writeFile (clean ++ "\\" ++  newtxt ++ ".txt") (combineTexts texts)
+    --delete these next two lines and recompile
     putStrLn "type anything and press enter to exit"
     getLine
     return ()  
